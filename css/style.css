@@ -1,0 +1,10 @@
+:root{
+    --primario: rgb(151, 30, 141);
+    --pimarioOSC: #4d0142;
+    --secundario: rgb(235, 252, 4);
+    --secundarioOSC: #d8d513;
+    --blanco: rgb(255, 255, 255);
+    --negro: #000;
+
+    --fuentePrincipal:'Electrolize', sans-serif; ;
+}
