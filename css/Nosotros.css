@@ -68,8 +68,6 @@ h3 {
 }
 /*footer*/
 .footer {
-  background-color: var(--pimarioOSC);
-  padding: 2rem 0rem;
   margin: 2rem 0;
   margin-top: 7rem;
 }
@@ -95,4 +93,16 @@ h3 {
 .navigation__links--selection,
 .navigation__links:hover {
   color: var(--secundario);
+}
+/*main*/
+.container {
+  display: flex;
+  align-items: center;
+}
+.container__img {
+  width: 100%;
+}
+/*footer*/
+.footer{
+  text-align: center;
 }
