@@ -1,0 +1,98 @@
+:root {
+  /*Paleta de colores*/
+  --primario: rgb(148, 16, 141);
+  --pimarioOSC: #4d0142a1;
+  --secundario: rgb(248, 248, 6);
+  --secundarioOSC: #d8d513;
+  --blanco: rgb(255, 255, 255);
+  --negro: #000;
+  /*Tipografia */
+  --fuentePrincipal: "Electrolize", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*Globales*/
+body {
+  background-color: var(--primario);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--blanco);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+  color: var(--secundario);
+  font-family: var(--fuentePrincipal);
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+
+/*header*/
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header__img {
+  margin: 3rem 0;
+}
+/*footer*/
+.footer {
+  background-color: var(--pimarioOSC);
+  padding: 2rem 0rem;
+  margin: 2rem 0;
+  margin-top: 7rem;
+}
+.footer__text {
+  text-align: center;
+  font-family: var(--fuentePrincipal);
+  font-size: 2.2rem;
+}
+
+/*navigation*/
+.navigation {
+  background-color: var(--pimarioOSC);
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.navigation__links {
+  font-family: var(--fuentePrincipal);
+  color: var(--blanco);
+  font-size: 2.5rem;
+}
+.navigation__links--selection,
+.navigation__links:hover {
+  color: var(--secundario);
+}
