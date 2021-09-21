@@ -68,6 +68,8 @@ h3 {
 }
 /*footer*/
 .footer {
+  background-color: var(--pimarioOSC);
+  padding: 2rem 0rem;
   margin: 2rem 0;
   margin-top: 7rem;
 }
@@ -96,13 +98,37 @@ h3 {
 }
 /*main*/
 .container {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+@media (min-width: 760px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
 }
 .container__img {
   width: 100%;
+   grid-row: 1/2;
 }
-/*footer*/
-.footer{
+@media (min-width: 760px){
+    .container__img{
+       grid-column: 2/3;
+    }
+}
+/*seccion de porque comprar del nosotros*/
+.blocks{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5rem;
+}@media (min-width:750px){
+  .blocks{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.block{
   text-align: center;
+}
+.block__title{
+  margin: 0;
 }
