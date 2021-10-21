@@ -34,9 +34,7 @@ p {
 a {
   text-decoration: none;
 }
-img {
-  max-width: 100%;
-}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -103,6 +101,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+
 }
 @media (min-width: 900px) {
   .grid {
@@ -114,10 +113,15 @@ h3 {
 .product {
   background-color: var(--pimarioOSC);
   padding: 1rem;
+
 }
-.product__img {
-  width: 100%;
+@media (max-width:520px ){
+    .product{
+        grid-column: 1/-1;
+
+    }
 }
+
 .product__name {
   font-size: 4rem;
 }

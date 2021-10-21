@@ -71,7 +71,8 @@ h3 {
 .footer {
   background-color: var(--pimarioOSC);
   padding: 2rem 0rem;
-  margin: 2rem 0rem;
+  margin: 2rem 0;
+  margin-top: 7rem;
 }
 .footer__text {
   text-align: center;
@@ -103,11 +104,8 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     
+  }
 
-  }
-  img{
-    max-width: 100%;
-  }
 }
 .formulario {
   display: grid;
@@ -142,4 +140,11 @@ h3 {
 }
 .formulario__campos--selec{
   color: var(--negro);
+
+}
+@media (max-width:520px ){
+  .formulario__campos{
+      grid-column: 1/-1;
+
+  }
 }
